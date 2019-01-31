@@ -1,0 +1,46 @@
+{
+  "name": "koa-router-find-my-way",
+  "version": "0.0.1",
+  "description": "Router middleware for koa. Based on find-my-way, a crazy fast http radix based router.",
+  "keywords": [
+    "koa",
+    "router",
+    "route",
+    "middleware",
+    "find-my-way"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cweili/koa-router-find-my-way.git"
+  },
+  "author": "Cweili",
+  "license": "MIT",
+  "homepage": "https://github.com/Cweili/koa-router-find-my-way",
+  "bugs": {
+    "url": "https://github.com/Cweili/koa-router-find-my-way/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint --fix *.js test/*.js",
+    "test": "jest test --collectCoverage --forceExit"
+  },
+  "dependencies": {
+    "find-my-way": "^1.18.0"
+  },
+  "peerDependencies": {
+    "koa": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "got": "^9.6.0",
+    "jest": "^23.6.0",
+    "koa": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
