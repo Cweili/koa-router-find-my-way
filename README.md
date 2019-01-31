@@ -1,7 +1,6 @@
 # koa-router-find-my-way
 
 [![npm][npm-version]][npm]
-[![npm][npm-size]][npm]
 [![npm][npm-downloads]][npm]
 [![npm][npm-license]][npm]
 
@@ -47,7 +46,6 @@ all `options` are passed to [find-my-way][find-my-way].
 
 [npm]: https://www.npmjs.com/package/koa-router-find-my-way
 [npm-version]: https://img.shields.io/npm/v/koa-router-find-my-way.svg
-[npm-size]: https://img.shields.io/bundlephobia/minzip/koa-router-find-my-way.svg
 [npm-downloads]: https://img.shields.io/npm/dt/koa-router-find-my-way.svg
 [npm-license]: https://img.shields.io/npm/l/koa-router-find-my-way.svg
 
