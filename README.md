@@ -42,7 +42,7 @@ app.listen(34567);
 
 ### koaRouter([options])
 
-all `options` are passed to [find-my-way][find-my-way].
+all `options` are passed to [find-my-way][find-my-way-api].
 
 [npm]: https://www.npmjs.com/package/koa-router-find-my-way
 [npm-version]: https://img.shields.io/npm/v/koa-router-find-my-way.svg
@@ -60,3 +60,4 @@ all `options` are passed to [find-my-way][find-my-way].
 
 [koa]: https://github.com/koajs/koa
 [find-my-way]: https://github.com/delvedor/find-my-way
+[find-my-way-api]: https://github.com/delvedor/find-my-way#api
