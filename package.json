@@ -1,13 +1,17 @@
 {
   "name": "koa-router-find-my-way",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Router middleware for koa. Based on find-my-way, a crazy fast http radix based router.",
   "keywords": [
     "koa",
     "router",
     "route",
     "middleware",
-    "find-my-way"
+    "find-my-way",
+    "http",
+    "server",
+    "radix",
+    "fast"
   ],
   "repository": {
     "type": "git",
