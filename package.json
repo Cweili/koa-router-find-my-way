@@ -29,7 +29,8 @@
     "test": "jest test --collectCoverage --forceExit"
   },
   "dependencies": {
-    "find-my-way": "^1.18.0"
+    "find-my-way": "^1.18.0",
+    "koa-compose": "^4.1.0"
   },
   "peerDependencies": {
     "koa": "^2.0.0"
