@@ -23,10 +23,11 @@ npm install koa-router-find-my-way --save
 ## Basic Usage
 
 ```js
-const koaRouter = require('koa-router-find-my-way');
+const Koa = require('koa');
+const Router = require('koa-router-find-my-way');
 
 const app = new Koa();
-const router = koaRouter();
+const router = new Router();
 
 router.get('/test/:p', async (ctx, next) => {
   const { p } = ctx.params;
