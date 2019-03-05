@@ -26,10 +26,10 @@
   "main": "index.js",
   "scripts": {
     "pretest": "eslint --fix *.js test/*.js",
-    "test": "jest test --collectCoverage --forceExit"
+    "test": "jest test --coverage --forceExit"
   },
   "dependencies": {
-    "find-my-way": "^1.18.0",
+    "find-my-way": "^2.0.1",
     "koa-compose": "^4.1.0"
   },
   "peerDependencies": {
@@ -42,7 +42,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^22.0.0",
     "got": "^9.6.0",
-    "jest": "^23.6.0",
+    "jest": "^24.1.0",
     "koa": "^2.7.0"
   },
   "engines": {
