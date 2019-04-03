@@ -116,7 +116,7 @@ Empty router.
 router.reset();
 ```
 
-### find(method, path)
+### router.find(method, path)
 
 Return (if present) the route registered in *method:path*.<br>
 
