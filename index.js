@@ -22,6 +22,7 @@ module.exports = function router(options) {
     'off',
     'reset',
     'prettyPrint',
+    'find',
   ].forEach((m) => {
     r[m] = fmw[m].bind(fmw);
   });

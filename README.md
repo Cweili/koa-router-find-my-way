@@ -116,6 +116,18 @@ Empty router.
 router.reset();
 ```
 
+### router.find(method, path)
+
+Return (if present) the route registered in *method:path*.<br>
+
+The path must be sanitized, all the parameters and wildcards are decoded automatically.<br/>
+
+```js
+router.find('GET', '/example')
+// => { handler: Function, params: Object, store: Object}
+// => null
+```
+
 ### router.prettyPrint()
 
 Prints the representation of the internal radix tree, useful for debugging.
