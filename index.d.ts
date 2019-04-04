@@ -38,6 +38,7 @@ declare namespace Router {
       version?: string
     ): FindResult | null
 
+    routes(): void
     reset(): void
     prettyPrint(): string
 
