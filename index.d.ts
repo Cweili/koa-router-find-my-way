@@ -1,15 +1,9 @@
 import * as Koa from "koa"
 import * as FindMyWay from "find-my-way"
 
-declare function Router(options: Router.Options): Router.Instance
+declare function Router(options: FindMyWay.Config<FindMyWay.HTTPVersion>): Router.Instance
 
 declare namespace Router {
-  type HTTPMethod = FindMyWay.HTTPMethod
-
-  interface Middleware extends Koa.Middleware { }
-
-  interface Options extends FindMyWay.Config<FindMyWay.HTTPVersion> { }
-
   interface Context extends Koa.Context {
     /**
      * url params
@@ -17,28 +11,26 @@ declare namespace Router {
     params: { [key: string]: string | undefined }
   }
 
-  interface FindResult extends FindMyWay.FindResult<FindMyWay.HTTPVersion> { }
-
   interface ShortHandRoute {
-    (path: string, ...middlewares: Array<Middleware>): Instance
+    (path: string, ...middlewares: Koa.Middleware[]): Instance
   }
 
   interface Instance {
     on(
-      method: HTTPMethod | HTTPMethod[],
+      method: FindMyWay.HTTPMethod | FindMyWay.HTTPMethod[],
       path: string,
-      ...middlewares: Array<Middleware>
+      ...middlewares: Koa.Middleware[]
     ): this
 
-    off(method: HTTPMethod | HTTPMethod[], path: string): void
+    off(method: FindMyWay.HTTPMethod | FindMyWay.HTTPMethod[], path: string): void
 
     find(
-      method: HTTPMethod,
+      method: FindMyWay.HTTPMethod,
       path: string,
       version?: string
-    ): FindResult | null
+    ): FindMyWay.FindResult<FindMyWay.HTTPVersion> | null
 
-    routes(): Middleware
+    routes(): Koa.Middleware
     reset(): void
     prettyPrint(): string
 
