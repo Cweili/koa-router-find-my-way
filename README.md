@@ -1,5 +1,7 @@
 # koa-router-find-my-way
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Cweili/koa-router-find-my-way.svg)](https://greenkeeper.io/)
+
 [![npm][npm-version]][npm]
 [![npm][npm-downloads]][npm]
 [![npm][npm-license]][npm]
