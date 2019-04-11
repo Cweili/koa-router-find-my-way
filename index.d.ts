@@ -1,7 +1,7 @@
 import * as Koa from "koa"
 import * as FindMyWay from "find-my-way"
 
-declare function Router(options: FindMyWay.Config<FindMyWay.HTTPVersion>): Router.Instance
+declare function Router(options?: FindMyWay.Config<FindMyWay.HTTPVersion>): Router.Instance
 
 declare namespace Router {
   interface Context extends Koa.Context {
