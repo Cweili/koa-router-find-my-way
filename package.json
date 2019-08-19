@@ -36,11 +36,11 @@
     "koa": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.0.0",
+    "eslint": "^6.2.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-node": "^0.3.2",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jest": "^22.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.1",
     "got": "^9.6.0",
     "jest": "^24.1.0",
     "koa": "^2.7.0"
