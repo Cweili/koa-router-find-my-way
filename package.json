@@ -41,7 +41,7 @@
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^23.0.0",
-    "got": "^9.6.0",
+    "got": "^10.0.4",
     "jest": "^24.1.0",
     "koa": "^2.7.0"
   },
