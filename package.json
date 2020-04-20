@@ -29,23 +29,23 @@
     "test": "jest test --coverage --forceExit"
   },
   "dependencies": {
-    "find-my-way": "^2.0.1",
+    "find-my-way": "^3.0.0",
     "koa-compose": "^4.1.0"
   },
   "peerDependencies": {
     "koa": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.2.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-import-resolver-node": "^0.3.2",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.0.0",
-    "got": "^9.6.0",
-    "jest": "^24.1.0",
-    "koa": "^2.7.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-import-resolver-node": "^0.3.3",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "got": "^10.7.0",
+    "jest": "^25.4.0",
+    "koa": "^2.11.0"
   },
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=10.0.0"
   }
 }

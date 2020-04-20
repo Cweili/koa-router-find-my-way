@@ -30,11 +30,11 @@ it('router with koa', async () => {
   // eslint-disable-next-line jest/valid-expect
   expect(got('http://localhost:34567/404')).rejects.toThrow();
 
-  expect((await got.delete('http://localhost:34567/delete/abc', { json: true })).body).toEqual({
+  expect(await got.delete('http://localhost:34567/delete/abc').json()).toEqual({
     p: 'abc',
   });
 
-  expect((await got('http://localhost:34567/all/def', { json: true })).body).toEqual({
+  expect(await got('http://localhost:34567/all/def').json()).toEqual({
     p: 'def',
   });
 });
