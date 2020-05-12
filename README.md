@@ -1,13 +1,13 @@
 # koa-router-find-my-way
 
-[![npm][npm-version]][npm]
-[![npm][npm-downloads]][npm]
-[![npm][npm-license]][npm]
+[![npm][badge-version]][npm]
+[![npm][badge-downloads]][npm]
+[![npm][badge-license]][npm]
 
 
-[![github][github-issues]][github]
-[![travis][travis-build]][travis]
-[![codecov][codecov-svg]][codecov]
+[![github][badge-issues]][github]
+[![build][badge-build]][travis]
+[![coverage][badge-coverage]][codecov]
 
 
 Router middleware for [koa][koa]. Based on [find-my-way][find-my-way], a crazy fast http radix based router.
@@ -151,18 +151,18 @@ console.log(router.prettyPrint());
 ```
 
 [npm]: https://www.npmjs.com/package/koa-router-find-my-way
-[npm-version]: https://img.shields.io/npm/v/koa-router-find-my-way.svg
-[npm-downloads]: https://img.shields.io/npm/dt/koa-router-find-my-way.svg
-[npm-license]: https://img.shields.io/npm/l/koa-router-find-my-way.svg
+[badge-version]: https://img.shields.io/npm/v/koa-router-find-my-way.svg
+[badge-downloads]: https://img.shields.io/npm/dt/koa-router-find-my-way.svg
+[badge-license]: https://img.shields.io/npm/l/koa-router-find-my-way.svg
 
 [github]: https://github.com/Cweili/koa-router-find-my-way
-[github-issues]: https://img.shields.io/github/issues/Cweili/koa-router-find-my-way.svg
+[badge-issues]: https://img.shields.io/github/issues/Cweili/koa-router-find-my-way.svg
 
-[travis]: https://travis-ci.org/Cweili/koa-router-find-my-way
-[travis-build]: https://img.shields.io/travis/Cweili/koa-router-find-my-way.svg?branch=master
+[travis]: https://travis-ci.com/Cweili/koa-router-find-my-way
+[badge-build]: https://img.shields.io/travis/com/Cweili/koa-router-find-my-way/master.svg
 
 [codecov]: https://codecov.io/gh/Cweili/koa-router-find-my-way
-[codecov-svg]: https://img.shields.io/codecov/c/github/Cweili/koa-router-find-my-way.svg
+[badge-coverage]: https://img.shields.io/codecov/c/github/Cweili/koa-router-find-my-way.svg
 
 [koa]: https://github.com/koajs/koa
 [find-my-way]: https://github.com/delvedor/find-my-way
