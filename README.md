@@ -53,7 +53,7 @@ app.listen(80);
 
 All `options` are passed directly to [find-my-way][find-my-way-api].
 
-### router.on(method, path, ...middlewares)
+### router.on(method, path, ...middlewares[, store])
 
 Register a new route.
 
@@ -74,7 +74,16 @@ router
   });
 ```
 
-### router.get|put|post|delete|head|patch|options|all(path, ...middlewares)
+Last argument, `store` is used to pass an object that you can access later inside the handler function. If needed, store can be updated.
+
+```js
+router
+  .on('GET', '/examples', async (ctx, next) => {
+    assert.equal(ctx.store, { message: 'hello world' });
+  }, { message: 'hello world' });
+```
+
+### router.get|put|post|delete|head|patch|options|all(path, ...middlewares[, store])
 
 If you want an even nicer api, you can also use the shorthand methods to declare your routes.
 

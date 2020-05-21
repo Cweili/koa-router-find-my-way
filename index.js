@@ -12,12 +12,8 @@ module.exports = function router(options) {
     let store;
     if (middlewares.length > 1 && typeof middlewares[middlewares.length - 1] === 'object') {
       store = middlewares.pop();
-      middlewares.unshift(async (ctx, next) => {
-        ctx.store = store;
-        await next();
-      });
     }
-    fmw.on(method, path, compose(middlewares));
+    fmw.on(method, path, compose(middlewares), store);
     return r;
   }
 
@@ -43,6 +39,7 @@ module.exports = function router(options) {
       return fmw.defaultRoute && fmw.defaultRoute(ctx, next);
     }
     ctx.params = handle.params;
+    ctx.store = handle.store;
     return handle.handler(ctx, next);
   };
 
