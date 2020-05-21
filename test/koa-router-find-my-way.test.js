@@ -24,6 +24,23 @@ it('router with koa', async () => {
       };
       await next();
     });
+
+  router
+    .get('/store/one', async (ctx, next) => {
+      const { s } = ctx.store;
+      ctx.body = {
+        s,
+      };
+      await next();
+    }, { s: 'test-one' })
+    .get('/store/two', async (ctx, next) => next(), async (ctx, next) => {
+      const { s } = ctx.store;
+      ctx.body = {
+        s,
+      };
+      await next();
+    }, { s: 'test-two' });
+
   app.use(router.routes());
   app.listen(34567);
 
@@ -36,5 +53,13 @@ it('router with koa', async () => {
 
   expect(await got('http://localhost:34567/all/def').json()).toEqual({
     p: 'def',
+  });
+
+  expect(await got('http://localhost:34567/store/one').json()).toEqual({
+    s: 'test-one',
+  });
+
+  expect(await got('http://localhost:34567/store/two').json()).toEqual({
+    s: 'test-two',
   });
 });

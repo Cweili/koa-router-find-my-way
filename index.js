@@ -2,11 +2,21 @@ const { METHODS } = require('http');
 const findMyWay = require('find-my-way');
 const compose = require('koa-compose');
 
+
 module.exports = function router(options) {
   const fmw = findMyWay(options);
   const r = {};
 
   function on(method, path, ...middlewares) {
+    // optional store argument
+    let store;
+    if (middlewares.length > 1 && typeof middlewares[middlewares.length - 1] === 'object') {
+      store = middlewares.pop();
+      middlewares.unshift(async (ctx, next) => {
+        ctx.store = store;
+        await next();
+      });
+    }
     fmw.on(method, path, compose(middlewares));
     return r;
   }
