@@ -40,7 +40,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jest": "^24.1.0",
     "got": "^11.0.2",
     "jest": "^26.0.1",
     "koa": "^2.11.0"
