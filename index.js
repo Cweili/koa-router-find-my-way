@@ -2,7 +2,6 @@ const { METHODS } = require('http');
 const findMyWay = require('find-my-way');
 const compose = require('koa-compose');
 
-
 module.exports = function router(options) {
   const fmw = findMyWay(options);
   const r = {};

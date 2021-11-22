@@ -20,10 +20,10 @@ Router middleware for [koa][koa]. Based on [find-my-way][find-my-way], a crazy f
 npm install koa-router-find-my-way --save
 ```
 
-> **Note:** koa-router-find-my-way@4 is based on [find-my-way@3][find-my-way].
+> **Note:** koa-router-find-my-way@5 is based on [find-my-way@5][find-my-way].
 > 
 > Old versions:
-> 
+> * koa-router-find-my-way@4 => find-my-way@3
 > * koa-router-find-my-way@3 => find-my-way@2
 > * koa-router-find-my-way@2 => find-my-way@1
 

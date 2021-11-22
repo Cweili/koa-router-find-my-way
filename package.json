@@ -1,6 +1,6 @@
 {
   "name": "koa-router-find-my-way",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Router middleware for koa. Based on find-my-way, a crazy fast http radix based router.",
   "keywords": [
     "koa",
@@ -24,6 +24,7 @@
     "url": "https://github.com/Cweili/koa-router-find-my-way/issues"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "pretest": "eslint --fix *.js test/*.js",
     "test": "jest test --coverage --forceExit"
