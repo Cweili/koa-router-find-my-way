@@ -37,7 +37,7 @@
     "koa": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.3.1",
+    "eslint": "^8.4.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.2",
