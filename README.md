@@ -6,8 +6,8 @@
 
 
 [![github][badge-issues]][github]
-[![build][badge-build]][travis]
-[![coverage][badge-coverage]][codecov]
+[![build][badge-build]][workflows]
+[![coverage][badge-coverage]][coveralls]
 
 
 Router middleware for [koa][koa]. Based on [find-my-way][find-my-way], a crazy fast http radix based router.
@@ -167,11 +167,11 @@ console.log(router.prettyPrint());
 [github]: https://github.com/Cweili/koa-router-find-my-way
 [badge-issues]: https://img.shields.io/github/issues/Cweili/koa-router-find-my-way.svg
 
-[travis]: https://travis-ci.com/Cweili/koa-router-find-my-way
-[badge-build]: https://img.shields.io/travis/com/Cweili/koa-router-find-my-way/master.svg
+[workflows]: https://github.com/Cweili/koa-router-find-my-way/actions/workflows/ci.yml?query=branch%3Amaster
+[badge-build]: https://img.shields.io/github/workflow/status/Cweili/koa-router-find-my-way/ci/master
 
-[codecov]: https://codecov.io/gh/Cweili/koa-router-find-my-way
-[badge-coverage]: https://img.shields.io/codecov/c/github/Cweili/koa-router-find-my-way.svg
+[coveralls]: https://coveralls.io/github/Cweili/koa-router-find-my-way?branch=master
+[badge-coverage]: https://img.shields.io/coveralls/github/Cweili/koa-router-find-my-way/master.svg
 
 [koa]: https://github.com/koajs/koa
 [find-my-way]: https://github.com/delvedor/find-my-way
