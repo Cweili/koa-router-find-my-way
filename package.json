@@ -30,7 +30,7 @@
     "test": "jest test --coverage --forceExit"
   },
   "dependencies": {
-    "find-my-way": "^5.0.0",
+    "find-my-way": "^7.0.1",
     "koa-compose": "^4.1.0"
   },
   "peerDependencies": {
