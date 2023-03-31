@@ -3,7 +3,7 @@ import * as FindMyWay from "find-my-way"
 
 /**
  * Router middleware for koa. Based on find-my-way, a crazy fast http radix based router.
- * 
+ *
  * @param options All options are passed directly to `find-my-way`.
  */
 declare function Router(options?: FindMyWay.Config<FindMyWay.HTTPVersion>): Router.Instance
@@ -19,7 +19,7 @@ declare namespace Router {
   interface ShortHandRoute {
     /**
      * Register a new route.
-     * 
+     *
      * @param path Route path
      * @param middlewares Koa.js middleware
      */
@@ -37,12 +37,12 @@ declare namespace Router {
     on(
       method: FindMyWay.HTTPMethod | FindMyWay.HTTPMethod[],
       path: string,
-      ...middlewares: Koa.Middleware[]
+      ...middlewares: (Koa.Middleware | object)[]
     ): this
 
     /**
      * Deregister a route.
-     * 
+     *
      * @param method HTTP method
      * @param path Route path
      */
@@ -50,10 +50,10 @@ declare namespace Router {
 
     /**
      * Return (if present) the route registered in `method:path`.
-     * 
+     *
      * @param method HTTP method
      * @param path The path must be sanitized, all the parameters and wildcards are decoded automatically.
-     * @param version 
+     * @param version
      */
     find(
       method: FindMyWay.HTTPMethod,
